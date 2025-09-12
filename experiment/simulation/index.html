@@ -1,13 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+    <script src="js/p5.js"></script>
+    <script src="js/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sim.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+    <meta charset="utf-8">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link>
+
+</head>
+<script>
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+
+<body>
+  <div class="box" id="boxx" style="position: absolute;">
+    <div class="title">
+      <h2> Flow Control : Stop-and-Wait ARQ</h2>
+      </div> 
+       
+      <button id="instruction" onclick="myFunction()"  class="dropbtn">INSTRUCTIONS</button> 
+          
+     <div id="myDropdown" class="dropdown-content">
+      <p style="text-align:justify;line-height: 1.5"><b>Follow these steps:</b><br><br>
+        <b>NOTE:</b> For better understanding we have not used the sequence number for representing frames instead we have taken the running serial number i.e., 1,2,3,4,5.<br>
+        <b>1. </b>Select the first frame, i.e., <b>Frame 1</b>, to be sent to the receiver and wait to receive the acknowledgment of the 1st frame.<br>
+        <b>2. </b>After <b>ACK 1</b> is received, select the next frame to be sent.<br>
+        <b>3. </b><b>ACK 2 is lost.</b> Wait for the <b>timeout message to appear</b>, then retransmit <b>Frame 2.</b><br> 
+        <B>4. </B>After <b>ACK 2</b> is received, select the next frame to be sent.<br>
+        <b>5. </b>After <b>ACK 3</b> is received, select the next frame to be sent.<br>
+        <b>6. </b></b>Frame 4 is lost.</b> Wait for the <b>timeout message to appear</b>, then retransmit <b>Frame 4.</b><br>
+        <b>7. </b>After <b>ACK 4</b> is received, select the next frame to be sent.<br>
+        <b>8. </b>After <b>ACK 5</b> is received, </b>ALL FRAMES SENT!</b><br>
+        <b>9. </b>Input the correct total number of frames transmitted and click the <b>Submit</b> button.</p>
+    </div>
+    <div id="sketch-holder" style="height:705px">
+    </div>
+ 
+
+   </div>
+      
+    <div class="footer">
+        &copy; 2024 Virtual Labs, IIT Roorkee
+    </div>
+
+    <script src="js/Stop_And_Wait.js"></script>
+    
+    <script>
+      
+      function myFunction() {
+        console.log("check");
+       document.getElementById("myDropdown").classList.toggle("show");
+       }
+        
+        
+        </script>
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
+
 </html>

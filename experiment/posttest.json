@@ -1,39 +1,52 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+[
+  {
+    "question": "For Stop-and-Wait ARQ, for 10 data packets sent, _______ acknowledgments are needed.",
+    "answers": {
+      "a": "less than 10",
+      "b": "more than 10",
+      "c": "exactly 10",
+      "d": "none of the above"
     },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+    "correctAnswer": "c"
+  },
+  {
+    "question": "What is the main disadvantage of stop-and-wait flow control?",
+    "answers": {
+      "a": "Unreliable",
+      "b": "Inefficient",
+      "c": "Attenuation",
+      "d": "Dropped Packets"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "The frames in Stop-And-Wait ARQ are re-transmitted when :-",
+    "answers": {
+      "a": "It is not known",
+      "b": "ACK is received",
+      "c": "The Time Expires",
+      "d": "Never Re-transmitted"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "The term that refers to the set of procedures used to restrict the amount of data that the sender can send before waiting for the acknowledgement is:",
+    "answers": {
+      "a": "Error control",
+      "b": "Byte Stuffing",
+      "c": "Delay Shift",
+      "d": "Flow Control"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "A receiver using stop-and-wait ARQ sends ACK framed numbered __________.",
+    "answers": {
+      "a": "0 and 1 only",
+      "b": "Sequentially, beginning with 0",
+      "c": "Sequentially, beginning with 1",
+      "d": "The frames are not numbered"
+    },
+    "correctAnswer": "a"
+  }
+]
