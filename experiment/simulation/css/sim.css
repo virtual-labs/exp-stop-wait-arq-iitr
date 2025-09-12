@@ -1,0 +1,134 @@
+/*Stop and Wait Css  */
+
+@media screen and (min-width: 1100px) {
+    body {
+       z-index:-3;
+       width:100%;
+       height: 100%;
+       font-family: 'Raleway', sans-serif !important;
+       position:absolute;
+    }
+    
+}
+
+    #topcorner {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #2C99CE ;
+    
+    }
+    #topcorner:hover , .right:hover{
+        color: #77BB41;
+    }
+    
+    
+      .box{	  
+        width: 1380px;
+        height: 705px;
+        z-index:-2;
+        border: 3px solid black;
+        background-color: #e3f6f5;
+        
+    }
+  
+    
+        /*li{
+            list-style-type:upper-roman;
+        }*/
+ 
+
+        #instruction{
+        z-index:0;
+        position:absolute;
+        margin-top: 1%;
+        right: 10%; 
+        background-color: #ffd803;
+        color:#272343;
+        border-radius: 6px;
+        font-size: 18px;
+        display: inline-block;
+        }
+
+        #instruction:hover {
+            background-color: #bae8e8;
+            color: #000;
+        }
+        
+          
+        .dropdown-content {
+          display:none;
+          position: absolute;
+          margin-left:72%;
+          margin-top: 4%;
+          background-color: white;
+          width: 360px;
+          height: auto;
+          border:4px;
+          border-radius: 4px;
+          padding: 10px;
+          font-family: sans-serif;
+          font-size: 15px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,1,1);
+          z-index: 1;
+          overflow: auto;
+        }
+        .dropdown-content p:hover {background-color: #e3f6f5}
+        .show {display:block;}
+        
+            .block{
+                display: none;
+            }
+        
+canvas {
+    z-index:-1;
+    margin-left: 17rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    padding:3%;
+    border: 1px solid black;
+    background-color: #fffffe;  
+}
+.position-absolute {
+    
+    position: absolute !important;
+    backdrop-filter: blur(6px);
+
+  }
+  .swal2-popup {
+    font-size: 1.4rem !important;
+    font-family: Georgia, serif;
+  }
+.header-line{
+    margin-top: 0.5rem;
+    background:  #ff6600;
+    border: 4px solid  #ff6600;
+    width:100%;
+    
+}
+.title{
+    margin: 1rem;
+    text-align: center;
+    color:  #272343;
+}
+.footer{
+  position: absolute;
+  top:705px;
+  left: 0;
+  width: 1380px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
+
+
+a{
+    text-decoration: none !important;
+    color: #2C99CE;
+}
+a:hover{
+    color: #77BB41 !important;
+}
