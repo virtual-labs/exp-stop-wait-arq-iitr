@@ -1,39 +1,52 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+[
+  {
+    "question": "Stop And Wait is which sort of technique?",
+    "answers": {
+      "a": "Error Control",
+      "b": "Flow Control",
+      "c": "Session Management",
+      "d": "Line Discipline"
     },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+    "correctAnswer": "b"
+  },
+  {
+    "question": "In Stop-and-Wait ARQ, the acknowledgment number always announces in ______ arithmetic the sequence number of the next frame expected.",
+    "answers": {
+      "a": "modulo-m",
+      "b": "modulo-2",
+      "c": "modulo-4",
+      "d": "None of the above"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Stop-and-Wait ARQ is a special case of Go-Back-N ARQ in which the size of the send window is:-",
+    "answers": {
+      "a": "4",
+      "b": "1",
+      "c": "8",
+      "d": "0"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "A sender using Stop-And-Wait ARQ sends the data frames numbered as :-",
+    "answers": {
+      "a": "Zero and One Only",
+      "b": "Sequentially, beginning with 0",
+      "c": "Sequentially, beginning with 1",
+      "d": "The frames are not numbered"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "The _________ Protocol adds a simple error control mechanism to the _______ Protocol.",
+    "answers": {
+      "a": "Selective Repeat ARQ; Go-Back-N ARQ",
+      "b": "Go-Back-N ARQ; Stop-and-Wait",
+      "c": "Stop-and-Wait ARQ; Stop-and-Wait",
+      "d": "None of the above"
+    },
+    "correctAnswer": "b"
+  }
+]
